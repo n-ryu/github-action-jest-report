@@ -41,12 +41,4 @@ describe("I", () => {
       });
     });
   });
-<<<<<<< Updated upstream
-
-  it("B-3", () => {
-    expect(1).toBe(2);
-  });
-})
-=======
 });
->>>>>>> Stashed changes

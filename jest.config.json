@@ -1,3 +1,14 @@
 {
-  "reporters": [ "default", ["jest-junit", { "titleTemplate": "{classname}-{title}", "outputDirectory": "./test/result/"}]]
+  "reporters": [ 
+    "default", 
+    [
+      "jest-junit", 
+      { 
+        "classNameTemplate": "{classname} > {title}",
+        "titleTemplate": "{classname} > {title}", 
+        "outputDirectory": "./test/result/",
+        "ancestorSeparator": " › "
+      }
+    ]
+  ]
 }

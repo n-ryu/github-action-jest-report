@@ -27,13 +27,13 @@ describe("I", () => {
       });
 
       it("2", () => {
-        expect(1).toBe(1);
+        expect(1).toBe(2);
       });
     });
 
     describe("B", () => {
       it("1", () => {
-        expect(1).toBe(1);
+        expect(1).toBe(2);
       });
 
       it("2", () => {

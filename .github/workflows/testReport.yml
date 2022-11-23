@@ -27,10 +27,22 @@ jobs:
         run: |
           yarn test
 
-      - name: 테스트 결과 발행2
+      - name: 테스트 결과 발행
         uses: dorny/test-reporter@v1
         if: success() || failure()
         with:
           name: JEST Tests # Name of the check run which will be created
           path: reports/*.xml # Path to test results
           reporter: jest-junit
+
+      - name: PR 댓글 작성
+        uses: actions/github-script@v5
+        with:
+          github-token: ${{secrets.GITHUB_TOKEN}}
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: '🚀'
+            })

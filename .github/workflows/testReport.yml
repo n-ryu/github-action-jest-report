@@ -1,7 +1,6 @@
 on:
-  push: 
-    branches:
-      - main
+  pull-request:
+    types: [opened]
 
 permissions:
   checks: write

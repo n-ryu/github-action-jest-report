@@ -1,0 +1,105 @@
+[33mcommit 60c6bb9f1e868a502e892c24b886931db3989969[m[33m ([m[1;36mHEAD -> [m[1;32mtest[m[33m)[m
+Author: n-ryu <ababc100564@gmail.com>
+Date:   Thu Nov 24 01:34:34 2022 +0900
+
+    remove: 안쓰게된 action 살제
+    
+    ?
+    q
+    asdfasdf
+
+[33mcommit 6312e9ffd217bee9917f5acbef0cd4d8f41976be[m[33m ([m[1;31morigin/test[m[33m)[m
+Author: n-ryu <ababc100564@gmail.com>
+Date:   Thu Nov 24 01:31:10 2022 +0900
+
+    test: 실패 케이스 추가
+
+[33mcommit 8c6fab9f904d7630da760b72b410a6716a8e99d3[m
+Author: n-ryu <ababc100564@gmail.com>
+Date:   Thu Nov 24 01:29:59 2022 +0900
+
+    fix: 두가지 액션의 이름 구분
+
+[33mcommit bc1db35125e86e4cd4772f7343e3a249e639474f[m
+Author: n-ryu <ababc100564@gmail.com>
+Date:   Thu Nov 24 01:26:54 2022 +0900
+
+    test: jest-junit 설정을 package.json으로 이동
+
+[33mcommit 143271f794876c9a15c606ca5eb347ce2d64d0b6[m
+Author: n-ryu <ababc100564@gmail.com>
+Date:   Thu Nov 24 01:19:16 2022 +0900
+
+    test: 새로운 reporter 테스트
+
+[33mcommit 7e39fd76d13cdb30ce50108a0e775898df637d8e[m
+Author: n-ryu <ababc100564@gmail.com>
+Date:   Thu Nov 24 01:11:58 2022 +0900
+
+    fix: stash와 머지
+
+[33mcommit f6776238c3c80dfacadf139588366604d8a52a8d[m
+Author: n-ryu <ababc100564@gmail.com>
+Date:   Thu Nov 24 01:09:57 2022 +0900
+
+    fix: github action 이벤트 조건 완화
+
+[33mcommit 15f35f40c50748472e289c5eb4eec3cc328055d3[m
+Author: n-ryu <ababc100564@gmail.com>
+Date:   Thu Nov 24 01:08:15 2022 +0900
+
+    test: 복잡한 구조의 테스트
+
+[33mcommit c20ad7819656a9345677e4dc515fb752b2d5fc08[m
+Author: n-ryu <ababc100564@gmail.com>
+Date:   Thu Nov 24 00:33:14 2022 +0900
+
+    test: 테스트용 커밋2
+
+[33mcommit b96f6f99026807cc6ffdf55283263388d74e2ed3[m
+Author: n-ryu <ababc100564@gmail.com>
+Date:   Thu Nov 24 00:32:30 2022 +0900
+
+    fix: 이벤트 트리거 오타 수정
+
+[33mcommit 906a29b7d92f5c588d0994edcaaf325474c77f86[m
+Author: n-ryu <ababc100564@gmail.com>
+Date:   Thu Nov 24 00:31:37 2022 +0900
+
+    test: 테스트용 커밋
+
+[33mcommit 475ac304d183025b2d2d7ac26afbf203d24cdf1d[m
+Author: n-ryu <ababc100564@gmail.com>
+Date:   Thu Nov 24 00:30:17 2022 +0900
+
+    feat: github action 이벤트 트리거를 PR로 변경
+
+[33mcommit 78bf0ee557b768b766417fe23aa601c5c55a2d73[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Author: n-ryu <ababc100564@gmail.com>
+Date:   Thu Nov 24 00:25:09 2022 +0900
+
+    fix: 테스트 리포트 추출 경로 변경
+
+[33mcommit 7948d0fd5fbef1b86350b70d28aa4e60bc02486d[m
+Author: n-ryu <ababc100564@gmail.com>
+Date:   Thu Nov 24 00:21:07 2022 +0900
+
+    fix: 테스트 name 변경
+
+[33mcommit 1a553b0d587b537f2a7e43f8067cdab4126f1906[m
+Author: n-ryu <ababc100564@gmail.com>
+Date:   Wed Nov 23 20:00:58 2022 +0900
+
+    feat: 결과 파일 저장 경로 지정 및 기타 옵션 설정
+
+[33mcommit e7cbe570c3679f3a1aacf5869116c9d53536e43b[m
+Author: n-ryu <ababc100564@gmail.com>
+Date:   Wed Nov 23 19:01:29 2022 +0900
+
+    fix: junit 경로 변경
+
+[33mcommit 691040ab0b1e5bdc4f8f65d906732c1e7a48f3e3[m
+Author: n-ryu <ababc100564@gmail.com>
+Date:   Wed Nov 23 18:58:57 2022 +0900
+
+    test: workflow 생성 및 최초 테스트

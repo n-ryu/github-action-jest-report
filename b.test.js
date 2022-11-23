@@ -6,4 +6,8 @@ describe("test B", () => {
   it("B-2", () => {
     expect(1).toBe(2);
   });
+
+  it("B-3", () => {
+    expect(1).toBe(1);
+  });
 })

@@ -1,9 +1,5 @@
 on:
-<<<<<<< HEAD
-  push:
-=======
   pull_request:
->>>>>>> origin/main
     branches:
       - main
 

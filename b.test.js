@@ -23,7 +23,7 @@ describe("I", () => {
   describe("나", () => {
     describe("A", () => {
       it("1", () => {
-        expect(1).toBe(1);
+        expect(1).toBe(2);
       });
 
       it("2", () => {

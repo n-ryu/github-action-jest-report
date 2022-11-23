@@ -37,6 +37,7 @@ jobs:
 
       - name: PR 댓글 작성
         uses: actions/github-script@v5
+        if: always()
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |

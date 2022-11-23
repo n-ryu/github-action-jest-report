@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="2" failures="1" errors="0" time="0.697">
+  <testsuite name="undefined" errors="0" failures="1" skipped="0" timestamp="2022-11-23T10:00:49" time="0.583" tests="2">
+    <testcase classname=" 1 is 1" name=" 1 is 1" time="0.002">
+    </testcase>
+    <testcase classname=" 1 is 1" name=" 1 is 1" time="0.003">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 2
+Received: 1
+    at Object.toBe (C:\Users\ababc\Documents\BoostCamp\test\test.js:6:13)
+    at Promise.then.completed (C:\Users\ababc\Documents\BoostCamp\test\node_modules\jest-circus\build\utils.js:289:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\ababc\Documents\BoostCamp\test\node_modules\jest-circus\build\utils.js:222:10)
+    at _callCircusTest (C:\Users\ababc\Documents\BoostCamp\test\node_modules\jest-circus\build\run.js:248:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (C:\Users\ababc\Documents\BoostCamp\test\node_modules\jest-circus\build\run.js:184:3)
+    at _runTestsForDescribeBlock (C:\Users\ababc\Documents\BoostCamp\test\node_modules\jest-circus\build\run.js:86:9)
+    at run (C:\Users\ababc\Documents\BoostCamp\test\node_modules\jest-circus\build\run.js:26:3)
+    at runAndTransformResultsToJestFormat (C:\Users\ababc\Documents\BoostCamp\test\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:120:21)
+    at jestAdapter (C:\Users\ababc\Documents\BoostCamp\test\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
+    at runTestInternal (C:\Users\ababc\Documents\BoostCamp\test\node_modules\jest-runner\build\runTest.js:367:16)
+    at runTest (C:\Users\ababc\Documents\BoostCamp\test\node_modules\jest-runner\build\runTest.js:444:34)</failure>
+    </testcase>
+  </testsuite>
+</testsuites>

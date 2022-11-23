@@ -31,7 +31,6 @@ jobs:
         run: |
           yarn test
 
-<<<<<<< HEAD
       - name: 테스트 결과 발행
         uses: dorny/test-reporter@v1
         if: success() || failure()
@@ -51,12 +50,3 @@ jobs:
               repo: context.repo.repo,
               body: '🚀'
             })
-=======
-      - name: 테스트 결과 발행2
-        uses: dorny/test-reporter@v1
-        if: success() || failure()
-        with:
-          name: JEST Tests # Name of the check run which will be created
-          path: reports/*.xml # Path to test results
-          reporter: jest-junit
->>>>>>> origin/main

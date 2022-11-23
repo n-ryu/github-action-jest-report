@@ -1,3 +1,5 @@
 {
-  "reporters": [ "default", ["jest-junit", { "titleTemplate": "{classname}-{title}", "outputDirectory": "./test/result/"}]]
+  "reporters": [ 
+    "default", "jest-junit"
+  ]
 }

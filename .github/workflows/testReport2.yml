@@ -29,7 +29,8 @@ jobs:
 
       - name: 테스트 결과 발행2
         uses: dorny/test-reporter@v1
+        if: success() || failure()
         with:
           name: JEST Tests # Name of the check run which will be created
-          path: test/result/*.xml # Path to test results
+          path: reports/*.xml # Path to test results
           reporter: jest-junit

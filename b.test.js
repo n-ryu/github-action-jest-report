@@ -1,9 +1,9 @@
 describe("test B", () => {
-  it("1 is 1", () => {
+  it("B-1", () => {
     expect(1).toBe(1);
   });
 
-  it("1 is 1", () => {
+  it("B-2", () => {
     expect(1).toBe(2);
   });
 })

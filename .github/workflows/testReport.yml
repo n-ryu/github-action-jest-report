@@ -1,5 +1,5 @@
 on:
-  push: 
+  push:
     branches:
       - main
 
@@ -7,28 +7,42 @@ permissions:
   checks: write
   pull-requests: write
 
-jobs: 
+jobs:
   test-report:
     runs-on: ubuntu-latest
     steps:
       - name: 체크아웃
         uses: actions/checkout@v2
-      
+
       - name: Node.js 세팅
         uses: actions/setup-node@v1
-        with: 
+        with:
           node-version: "18.x"
 
       - name: 패키지 설치
-        run : |
+        run: |
           yarn
 
       - name: 테스트 실행
-        run : |
+        run: |
           yarn test
 
       - name: 테스트 결과 발행
-        uses: EnricoMi/publish-unit-test-result-action/composite@v2
-        if: always()
+        uses: dorny/test-reporter@v1
+        if: success() || failure()
         with:
-          junit_files: "test/result/*.xml"
+          name: JEST Tests # Name of the check run which will be created
+          path: reports/*.xml # Path to test results
+          reporter: jest-junit
+
+      - name: PR 댓글 작성
+        uses: actions/github-script@v5
+        with:
+          github-token: ${{secrets.GITHUB_TOKEN}}
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: '🚀'
+            })

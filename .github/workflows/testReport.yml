@@ -42,7 +42,7 @@ jobs:
 
 
       - name: PR 댓글 작성
-        uses: actions/github-script@v5
+        uses: actions/github-script@v6
         if: always()
         with:
           script: |

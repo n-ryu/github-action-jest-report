@@ -20,14 +20,17 @@ jobs:
           node-version: "18.x"
 
       - name: 패키지 설치
+        working-directory: ./client
         run: |
           yarn
 
       - name: 테스트 실행
+        working-directory: ./client
         run: |
           yarn test
 
       - name: 테스트 결과 발행
+        working-directory: ./client
         uses: n-ryu/test-reporter@v0.0.1
         if: success() || failure()
         with:

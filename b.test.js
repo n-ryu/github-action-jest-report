@@ -33,7 +33,7 @@ describe("I", () => {
 
     describe("B", () => {
       it("1", () => {
-        expect(1).toBe(4);
+        expect(1).toBe('a');
       });
 
       it("2", () => {

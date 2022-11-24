@@ -45,7 +45,6 @@ jobs:
         uses: actions/github-script@v5
         if: always()
         with:
-          github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
             github.rest.issues.createComment({
               issue_number: context.issue.number,

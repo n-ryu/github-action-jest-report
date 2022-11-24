@@ -37,6 +37,7 @@ jobs:
         id: report
 
       - name: 테스트 결과 출력
+        if: always()
         run: echo "${{steps.report.output.summary}}"
 
 

@@ -28,29 +28,9 @@ jobs:
           yarn test
 
       - name: 테스트 결과 발행
-        uses: n-ryu/test-reporter@0.0.3
+        uses: n-ryu/test-reporter@v0.0.1
         if: success() || failure()
         with:
           name: JEST Tests # Name of the check run which will be created
           path: reports/*.xml # Path to test results
           reporter: jest-junit
-        id: report
-
-      - name: 테스트 결과 출력
-        if: always()
-        run: echo "${{steps.report.outputs.summary}}"
-
-
-      - name: PR 댓글 작성
-        uses: actions/github-script@v6
-        env:
-          SUMMARY: ${{steps.report.outputs.summary}}
-        if: always()
-        with:
-          script: |
-            github.rest.issues.createComment({
-              issue_number: context.issue.number,
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              body: process.env.SUMMARY
-            })

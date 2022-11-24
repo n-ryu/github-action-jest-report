@@ -37,7 +37,7 @@ describe("I", () => {
       });
 
       it("2", () => {
-        expect(1).toBe(1);
+        expect('a').toBe('a');
       });
     });
   });

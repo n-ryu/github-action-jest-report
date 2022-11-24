@@ -36,9 +36,15 @@ jobs:
           reporter: jest-junit
         id: report
 
+      - name: 테스트 결과 출력
+        run: echo "${{steps.report.output.summary}}"
+
+
       - name: PR 댓글 작성
         uses: actions/github-script@v5
         if: always()
+        env: 
+          OUTPUT: ${{steps.report.output.summary}}
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
@@ -46,5 +52,5 @@ jobs:
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: steps.report.output.summary
+              body: $OUTPUT
             })
